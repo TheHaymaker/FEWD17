@@ -40,10 +40,12 @@ _Note: For a view of the full page, see the [jpg](images/relaxr_landing.jpg) pro
 - [What is a CSS Reset?](http://www.cssreset.com/what-is-a-css-reset/)
 - Relaxr's [design file](design_file.txt)
 
-<br>
-
 ---
 
 ### Evaluation / Submission
 
-Students will create a new repository on GitHub called "homework-landingpage" and push their code to it when they are ready to submit. Instructional team should evaluate against the solution code and the student's use of technical elements. They will provide a numeric grade on a scale: does not meet expectations (0); meets expectations (1); exceeds expectations (2). Bonus sections are completely optional. The maximum possible score on this assignment is 12/12.
+You'll create a new repository on GitHub called "landing-page-hw" and push your code to it when you are ready to submit.
+
+For submission: Publish the repository to Github Pages.
+
+In a private DM on slack, share BOTH the link to the repository as well as the GitHub Pages URL of the deployed example with your instructor (you'll submit a total of two URLs).
