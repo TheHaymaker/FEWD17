@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cascade, Specificity and Floats</title>
+  <style>
+
+    /* Cascade */
+    
+    h1 {
+      color: red;
+    }
+
+    a {
+      /* style rules */
+    }
+
+    form {
+      /* style rules */
+    }
+
+    p {
+      /* style rules */
+    }
+
+    h1 {
+      color: black;
+    }
+
+
+    /* Specificity */
+
+    /* Element Selector */
+    /* ... will try to style every instance of the element on the page */
+    /* ... least specific */
+    div {
+      display: block;
+    }
+
+    /* Class Selector (query selector) */
+    .special-bq {
+      font-size: 40px;
+    }
+
+    .extra-special-bq {
+      font-size: 60px;
+      border-bottom: 3px solid black;
+    }
+
+    /* class specificity ++ */
+    .special-bq.extra-special-bq {
+      font-family: Helvetica, sans-serif;
+    }
+
+    /* ID Selector */
+    .main {
+      border: 20px dotted blue;
+    }
+
+    #wrapper {
+      
+    }
+
+    #wrapper p a {
+
+    }
+
+    .wrapper p a {
+
+    }
+
+
+    /* Utility classes begin */
+    .font-20px {
+      font-size: 20px;
+    }
+
+    .margin-8x {
+      margin: calc(8 * 5px);
+    }
+    /* Utility classes end */
+
+
+  /*  */
+  body.main-over-ride {
+    border: 20px dotted red;
+  }
+
+  .navbar {
+    background-color: red !important;
+  }
+
+  </style>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main main-over-ride make-me-more-specific">
+
+  <h1 class="special-bq extra-special-bq">I am black</h1>
+  <p class="special-bq">This is content</p>
+  <p>another paragraph</p>
+  <p>paragraph numero tres</p>
+
+  <nav class="navbar" style="background-color: yellow;">
+
+
+    <a class="filler inline-block" href="/">nav item</a>
+    <a class="filler inline-block" href="/">nav item+</a>
+    <a class="filler inline-block" href="/">nav item++</a>
+  </nav>
+
+  <div class="font-20px margin-8x"></div>
+  <div></div>
+  <div></div>
+  
+</body>
+</html>
