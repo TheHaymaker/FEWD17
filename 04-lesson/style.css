@@ -17,8 +17,14 @@ html body * {
   clear: both;
 }
 
+
+
 .float-left {
   float: left;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .filler {
@@ -28,8 +34,31 @@ html body * {
   font-size: 20px;
   text-decoration: none;
   color: black;
-  margin: 5px;
+  margin: 1%;
+  position: relative;
+  transition: 0.5s all ease-in-out;
+  
 }
+
+.filler:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  opacity: 0;
+  bottom: -10px;
+  left: -50px;
+  position: absolute;
+  transition: 0.5s all ease-in-out;
+}
+
+.filler:hover:after {
+  opacity: 1;
+  left: 0px;
+  transition: 0.5s all ease-in-out;
+}
+
+
 
 #bg_black {
   color: white;
@@ -57,7 +86,7 @@ html body * {
 }
 
 .one-third {
-  width: 33.33%;
+  width: 31.33%;
 }
 
 .two-thirds {
