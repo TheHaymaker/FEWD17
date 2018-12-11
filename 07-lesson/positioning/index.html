@@ -10,6 +10,7 @@
     .big-mac {
       border: 2px solid black;
       padding: 20px;
+      background-color: white;
     }
 
     .relative {
@@ -21,6 +22,15 @@
       width: 100px;
       height: 100px;
       background-color: red;
+    }
+
+    .fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: white;
+      background-color: #1b1a63;
     }
   </style>
 </head>
@@ -34,7 +44,14 @@
   <div class="big-mac relative">Relative Element</div>
 
   <!-- absolute position -->
+  <div class="big-mac relative">Relative Element
+    <div class="big-mac absolute">Absolute Element</div>
+  </div>
 
+  <div class="big-mac relative">Relative Element</div>
+
+  <!-- fixed position -->
+  <div class="big-mac fixed">Fixed Element</div>
 
 
 </body>

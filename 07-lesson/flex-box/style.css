@@ -1,0 +1,20 @@
+.flex-container {
+  display: flex;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.flex-item {
+  background-color: lightblue;
+  width: 100px;
+  min-height: 100px;
+  margin: 5px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-4 {
+  flex: 4;
+}
